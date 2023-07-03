@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hi
+        </title>
+        <style>
+            .logo{
+                height:100%;
+                object-fit: contain;
+            }
+            .hero{
+                height: calc( 100vh - 80px);
+                display: grid;
+                /*
+                grid-template-columns: 60vw 1fr;
+                */
+                border-bottom: solid;
+                place-items: center;
+                
+            }
+            .hero h1{
+                color: black;
+                margin-top: 2vh;
+                font-size: 80px;
+            }
+            .project-title{
+                height: 70px;
+                font-size:50px;
+                text-align: center;
+                border-bottom: solid;
+                padding-top: 10px;
+
+            }
+            .topics{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                height: calc(100vh - 70px)
+            }
+            .subject1, .subject2, .subject3{
+                transition: 0.4s;
+                width: 20vw;
+            }
+            .subject-picture{
+                width: 100%;
+                object-fit: contain;
+                border-radius: 100px;
+                border:solid;
+                background-color: rgb(50, 55, 59);
+                
+            }
+            .subject1:hover, .subject2:hover, .subject3:hover{
+                opacity: 50%;
+            }
+            .topics h1{
+                text-align: center;
+            }
+
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/Guo Er Saw-01 (2).jpg">
+            <nav class="navigation-buttons">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">ABOUT</a></li>
+                
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="hero-message">
+                <h1>Portfolio.</h1> 
+                <div id="border"></div>
+            </div>
+            
+        </div>
+        <h1 class="project-title">TOPICS</h1>
+        <div class="topics">
+            <div class="subject1">
+                <a href="#"><img class="subject-picture" src="images/mech1.png">
+                <h1>Mechatronics</h1>
+            </a>
+            </div>
+            <div class="subject2">
+                <a href="#"><img class="subject-picture" src="images/AM1.png">
+                <h1>Manufacturing</h1>
+                </a>
+            </div>
+            <div class="subject3">
+                <a href="#"><img class="subject-picture" src="images/soft1.png">
+                <h1>Software</h1>
+                </a>
+            </div>
+        </div>
+
+        
+        
+    </body>
+
+</html>

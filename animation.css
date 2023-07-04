@@ -2,17 +2,25 @@
     height: 100px;
     white-space: nowrap;
     overflow: hidden; 
-    font-size: 80px;
-
-  }
-  
-
-    .hero h1 {
     animation: animated-text 1.5s steps(30,end) 1s 1 normal both
   }
 
+
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 350px;} /*change this to make the paragraph longer*/
+    to{width: 23rem;} /*change this to make the paragraph longer*/
   }
 
+  @media only screen and (max-width: 1200px){
+
+  .hero h1 {
+    height: 3.5rem;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: animated-text 1s steps(30,end) 1s 1 normal both
+  }
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 16rem;} /*change this to make the paragraph longer*/
+  }
+}

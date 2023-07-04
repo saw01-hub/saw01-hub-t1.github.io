@@ -1,0 +1,73 @@
+.hero{
+    height: calc( 100vh - 4rem);
+    display: grid;
+    /*
+    grid-template-columns: 60vw 1fr;
+    */
+    border-bottom: solid;
+    place-items: center;
+}
+.hero h1{
+    color: black;
+    margin-top: 2vh;
+    font-size: 4rem;
+}
+.topics-title{
+    height: 70px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid;
+    padding-top: 10px;
+
+}
+.topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 70px)
+}
+.subject1, .subject2, .subject3{
+    transition: 0.4s;
+    width: 20vw;
+}
+.subject-picture{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+    border:solid;
+    background-color: rgb(50, 55, 59);
+    
+}
+.subject1:hover, .subject2:hover, .subject3:hover{
+    opacity: 50%;
+}
+.topics h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    .hero h1{
+        font-size: 3.5rem;
+    }
+
+    .topics{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: calc(100vh - 70px)
+    }
+    .subject1, .subject2, .subject3{
+        width: 50vw;
+    }
+    .subject-picture{
+        border-radius: 20px;
+    }
+    .topics h1{
+        font-size: 1.5rem;
+    }
+
+}

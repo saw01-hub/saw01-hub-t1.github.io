@@ -1,0 +1,56 @@
+h1{
+    font-size: 5rem;
+    text-align: center;
+
+}
+h2{
+    font-size: 3rem;
+    text-align: left;
+    padding: 5px;
+    border: solid;
+    border-radius: 20px;
+}
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 5px;
+}
+.project-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 5rem;
+    place-items: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    
+}
+.thumbnail{
+    height: calc(50vh + 50px);
+    width: 100%;
+    object-fit: contain;
+    padding: 30px 10px;
+    place-self: center;
+    
+}
+.display-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.result-img{
+    display: inline;
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+    border: solid;
+    padding: 30px 10px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 1200px) and (min-aspect-ratio: 3/7){
+
+    .display-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

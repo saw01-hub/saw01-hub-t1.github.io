@@ -7,11 +7,17 @@
     border-bottom: solid;
     place-items: center;
 }
+.hero h2{
+    display: none;
+    font-size: 1rem;
+}
 .hero h1{
     color: black;
     margin-top: 2vh;
     font-size: 4rem;
+    justify-self: center;
 }
+
 .topics-title{
     height: 70px;
     font-size: 3rem;
@@ -69,6 +75,10 @@
 
 }
 @media only screen and (max-width: 1200px) and (min-aspect-ratio: 3/7){
+    .hero h2{
+        display: block;
+    }
+
     .topics{
         height: 100%;
     }

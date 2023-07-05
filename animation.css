@@ -1,4 +1,4 @@
-    .hero h1 {
+  .hero h1 {
     height: 100px;
     white-space: nowrap;
     overflow: hidden; 
@@ -19,8 +19,14 @@
     overflow: hidden; 
     animation: animated-text 0.75s steps(10,end) 1s 1 normal both
   }
+  .hero h2 {
+    height: 3.5rem;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: animated-text 0.75s steps(10,end) 1s 1 normal both
+  }
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 14.5rem;} /*change this to make the paragraph longer*/
+    to{width: 15.2rem;} /*change this to make the paragraph longer*/
   }
 }

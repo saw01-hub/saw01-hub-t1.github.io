@@ -1,14 +1,16 @@
+
 h1{
     font-size: 5rem;
     text-align: center;
 
 }
 h2{
+    margin: 1.5rem 0;
     font-size: 3rem;
     text-align: left;
     padding: 5px;
     border: solid;
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 p{
     font-size: 1.5rem;
@@ -20,55 +22,56 @@ p{
     grid-template-columns: 1fr;
     font-size: 5rem;
     place-items: center;
-    border-radius: 20px;
     margin-bottom: 10px;
+
     
 }
 .thumbnail{
-    height: calc(50vh + 50px);
     width: 100%;
     object-fit: contain;
-    padding: 30px 10px;
     place-self: center;
+    border: solid;
+    border-radius: 1rem;
+    margin-top: 1rem;
     
 }
 .display-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 .result-img{
     display: inline;
-    height: 50vh;
     width: 100%;
     object-fit: contain;
     border: solid;
-    padding: 30px 10px;
-    border-radius: 20px;
+    border-radius: 1rem;
 }
-@media only screen and (max-width: 1200px) and (min-aspect-ratio: 3/7){
-    h1{
-        font-size: 2.75rem;
 
+
+@media only screen and (max-width: 1400px){
+    *{
+        font-size: 10px;
     }
-    h2{
+    a{
         font-size: 1.5rem;
-
-    }
-    p{
-        font-size: 0.75rem;
-    }
-    .thumbnail{
-        padding: 15px 10px;
-        height: 100%;
-        border: solid;
-        border-radius: 20px;
     }
     .display-grid{
         grid-template-columns: 1fr;
 
     }
+
     .result-img{
         height: 100%;
     }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    *{
+        font-size: 8px;
+    }
+
 }

@@ -63,7 +63,7 @@
     .topics{
         flex-direction: column;
         height:auto;
-        margin-bottom: 10vh;
+        padding-bottom: 10vh;
     }
     .subject1, .subject2, .subject3{
         width: 50vw;

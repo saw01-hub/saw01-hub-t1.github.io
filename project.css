@@ -13,7 +13,7 @@ h2{
     border-radius: 1rem;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
     padding: 5px;
 }
@@ -27,14 +27,14 @@ p{
     
 }
 .thumbnail{
-    width: 100%;
+    width: 70%;
     object-fit: contain;
-    place-self: center;
     border: solid;
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 15vw;
     
 }
+
 .display-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,15 +52,17 @@ p{
 
 @media only screen and (max-width: 1400px){
     *{
-        font-size: 10px;
+        font-size: 12px;
     }
     a{
         font-size: 1.5rem;
     }
+
     .display-grid{
         grid-template-columns: 1fr;
 
     }
+
 
     .result-img{
         height: 100%;
@@ -69,7 +71,16 @@ p{
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+    p{
+        line-height: 1.3;
+    }
+    .thumbnail{
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
     *{
         font-size: 8px;
     }

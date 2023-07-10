@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mechatronics</title>
+        <title>Software</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="project.css">
@@ -13,48 +13,68 @@
             <img class="logo" src="images/aspect-ratio.png">
             <nav class="navigation-buttons">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#topicsID">PROJECTS</a></li>
+                <li><a class="current" href="#topicsID">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </nav>
         </header>
-        <h1>Project1</h1>
+        <h1>Telegram Bot</h1>
         
         <div class="project-layout">
             <div class="description">
                 <h2>Description</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices dapibus dignissim. Nulla commodo lorem vel pulvinar sollicitudin. Morbi a mauris malesuada risus imperdiet ullamcorper vitae at justo. Sed laoreet tortor id tellus laoreet, non tincidunt felis convallis. Proin semper, lectus ut rutrum venenatis, neque est consectetur mauris, ut mattis est tellus et nunc. Sed tincidunt, odio aliquet blandit semper, felis dolor scelerisque velit, sed molestie velit tortor vitae sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisi id massa bibendum semper ac sed nisi. Vivamus sem enim, elementum non metus non, bibendum lobortis sapien. Nulla blandit velit vel nulla pretium, sed commodo turpis aliquet.
-
+                <p> During my last semester in university, I developed a project aimed at assisting me in my job search. As a time-constrained student, I created a Telegram bot capable of scraping job listings from the web based on my filter criteria. The bot then presented the information directly on Telegram for easy access. To enhance its functionality, I leveraged the newly released ChatGPT API to generate automated cover letters for job applications. The application was deployed on a cloud compute instance for 24/7 operation. Furthermore, I implemented access restrictions on the Telegram bot to prevent unauthorized usage and utilized Git for version control throughout the project.
                 </p>
             
                 <img class="thumbnail" src="images/IMG-20220928-WA0007.jpg">
             </div>
             <div>
-            <h2>Objectives and Processes</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices dapibus dignissim. Nulla commodo lorem vel pulvinar sollicitudin. Morbi a mauris malesuada risus imperdiet ullamcorper vitae at justo. Sed laoreet tortor id tellus laoreet, non tincidunt felis convallis. Proin semper, lectus ut rutrum venenatis, neque est consectetur mauris, ut mattis est tellus et nunc. Sed tincidunt, odio aliquet blandit semper, felis dolor scelerisque velit, sed molestie velit tortor vitae sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisi id massa bibendum semper ac sed nisi. Vivamus sem enim, elementum non metus non, bibendum lobortis sapien. Nulla blandit velit vel nulla pretium, sed commodo turpis aliquet.
-            <br>
-            <br>
-            Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
-            <br>
-            <br>
-            Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
-            <br>
-            <br>
-            Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
-            </p>
+                <h2>Objectives and Processes</h2>
+                <p>
+                    The primary objective of the project was to streamline my job search process by automating the collection of job listings and generating personalized cover letters. To achieve this, I utilized Python and several libraries, including time, datetime, csv, json, selenium, openai, and telebot.
+                    <br>
+                    <br>
+                    The process involved the following steps:
+                    <br>
+                    <br>
+                    Job Listing Scraping: I implemented web scraping techniques using Python's selenium library to extract job listings from various websites. I integrated filters to narrow down the results based on my specific criteria, such as location, industry, and job title.
+                    <br>
+                    <br>
+                    Telegram Bot Integration: To make the job listings easily accessible, I developed a Telegram bot using the telebot library. The bot interacted with users and displayed the scraped job information directly within the Telegram app, providing a user-friendly interface for browsing and reviewing potential opportunities.
+                    <br>
+                    <br>
+                    Cover Letter Generation: To automate the cover letter creation process, I leveraged the OpenAI ChatGPT API. I integrated the API into the bot, enabling it to generate personalized cover letters based on the job requirements and user-provided information. This feature saved time and ensured consistent quality in my job applications.
+                    <br>
+                    <br>
+                    Cloud Deployment: To ensure continuous operation, I deployed the application on a cloud compute instance. This allowed the Telegram bot to run 24/7, ensuring that job listings were regularly updated and cover letters could be generated on-demand.
+                    <br>
+                    <br>
+                    Access Control and Version Control: I implemented access restrictions within the Telegram bot to prevent unauthorized usage. This ensured that only authorized individuals could utilize the bot's functionality. Additionally, I utilized Git for version control throughout the project, enabling easy collaboration and tracking of code changes.
+                    
+                </p>
+                <div class="obj-display-grid">
+                    <img class="result-img" src="images/IMG-20220928-WA0007.jpg">
+                    <img class="result-img" src="images/IMG-20220928-WA0007.jpg">
+                </div>
             </div>
             <div class="results">
                 <h2>Results</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices dapibus dignissim. Nulla commodo lorem vel pulvinar sollicitudin. Morbi a mauris malesuada risus imperdiet ullamcorper vitae at justo. Sed laoreet tortor id tellus laoreet, non tincidunt felis convallis. Proin semper, lectus ut rutrum venenatis, neque est consectetur mauris, ut mattis est tellus et nunc. Sed tincidunt, odio aliquet blandit semper, felis dolor scelerisque velit, sed molestie velit tortor vitae sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisi id massa bibendum semper ac sed nisi. Vivamus sem enim, elementum non metus non, bibendum lobortis sapien. Nulla blandit velit vel nulla pretium, sed commodo turpis aliquet.
+                <p> The project yielded significant benefits and streamlined my job search process. By automating the job listing collection and cover letter generation, I saved a substantial amount of time that would have otherwise been spent manually searching and writing cover letters for each application.
                     <br>
                     <br>
-                    Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
+                    The Telegram bot effectively scraped relevant job listings based on my filter criteria, providing me with a centralized platform to review and consider potential opportunities. The integration with the ChatGPT API enabled the automatic generation of personalized cover letters, greatly reducing the time and effort required for each job application.
                     <br>
                     <br>
-                    Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
+                    The cloud deployment ensured that the bot operated continuously, allowing me to receive real-time updates on job listings and generate cover letters whenever needed. This improved efficiency and enabled me to stay ahead in the competitive job market.
                     <br>
                     <br>
-                    Nullam faucibus arcu ac sagittis scelerisque. Donec eu arcu vel massa scelerisque blandit. Curabitur sit amet purus diam. Aenean eget orci pulvinar, molestie nisl eget, condimentum eros. Ut sollicitudin sit amet turpis quis tempor. Morbi nec consectetur enim, id imperdiet odio. Nam eget dapibus ex. Quisque rutrum lobortis elit, et rhoncus erat dictum at. Quisque vitae mattis risus, eu tempus odio. Curabitur sit amet tortor id arcu cursus lobortis at commodo orci. 
-                    </p>
+                    The access control mechanism provided an added layer of security, ensuring that only authorized users could utilize the bot's functionalities. This protected the bot from misuse and maintained the integrity of the job search process.
+                    <br>
+                    <br>
+                    Throughout the project, the use of Git for version control facilitated easy collaboration with team members and provided a reliable way to track and manage code changes.
+                    <br>
+                    <br>
+                    In conclusion, the project successfully achieved its objectives by automating the job search process, providing an efficient and user-friendly platform for accessing job listings, generating personalized cover letters, and ensuring continuous operation. It significantly reduced the time and effort required for job applications, enabling me to focus on other aspects of my job search and ultimately increasing my chances of securing suitable employment.
+                </p>
                 <div class="display-grid">
                     <img class="result-img" src="images/IMG-20220928-WA0007.jpg">
                     <img class="result-img" src="images/IMG-20220928-WA0007.jpg">

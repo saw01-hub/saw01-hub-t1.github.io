@@ -1,0 +1,72 @@
+.hero strong{
+    color: rgb(200, 62, 77);
+}
+.hero-message{
+    margin: 20px;
+    
+}
+.hero p{
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.hero-image{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 30px;
+    border-left: solid;
+}
+.project-title{
+    height: 70px;
+    font-size:50px;
+    text-align: center;
+    border-bottom: solid;
+
+}
+.project{
+    height: calc(100vh - 70px);
+    display:grid;
+    grid-template-columns: 66vw 1fr;
+}
+.sub-project{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.project1, .project2{
+    display: grid;
+    grid-template-columns: 22vw 1fr;
+}
+
+.project2{
+    border-top:solid;
+}
+.grid-project3{
+    display: grid;
+    border-left: solid;
+    grid-template-rows: 1fr 30px;
+}
+.project3{
+    display: grid;
+    grid-template-rows: 34vh 1fr;
+}
+
+.project1-picture, .project2-picture{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+
+    aspect-ratio: 3/2;
+    padding: 20px;
+}
+.project3-picture {
+    height:100%;
+    width:100%;
+    object-fit:contain;
+    border:solid;
+}
